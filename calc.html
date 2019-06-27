@@ -1,8 +1,7 @@
-<!--Save as calc.html-->
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Page Title</title>
+        <title>Calculate</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=true" />
         <link rel="stylesheet" href="calc.css" type="text/css">
@@ -10,22 +9,34 @@
     </head>
     <body>
     <div class="container">
-    <h2><u>Scientific Calculator</u></h2>
+    <h2><u>Calculator</u></h2>
     <details>
-         <summary>Click here for help</summary>
-         <p><br>I deactived the brackets, --> "(" and ")", because I have not made them work with the scientific part of the calculator.<br></p>
+         <summary>About</summary>
+         <p><br>This is a calculator that holds a lots of important physics constants.<br></p>
     </details>
     <div class="div">
-        <table><caption><pre>Calculator      by Henry Kamulanje</bsp></caption>
+        <table><caption><pre>Physics Constants</bsp></caption>
             <tr>
                 <td colspan="5"><div id="display-container"><div id="display1"><small><small><span></span></small></small></div><div id="h1"><small><small><span></span></small></small></div></div></td>
             </tr>
-            
+                
+            <tr>
+                <td><button onclick='getElementById("h1").innerHTML = digit("1093845.633")'>Ce</button> </td>
+                <td><button onclick='getElementById("h1").innerHTML = digit("299792458")'>C</button> </td>
+				<td><button onclick='getElementById("h1").innerHTML = digit("0.0072973526")'>Fine</button> </td>
+				<td><button onclick='getElementById("h1").innerHTML = digit("0.0000000000140897017")'>Rc</button> </td>
+				<td><button onclick='getElementById("h1").innerHTML = digit("29.053507")'>Fmax</button> </td>
+				
+            </tr>				
+				
+				
             <tr>
                 <td><button class="top" onclick='getElementById("h1").innerHTML = bsp()'>Del</button></td>   
-                <td><button class="top" onclick='getElementById("h1").innerHTML = mp()'>M+</button></td>
+                <!-- 
+				<td><button class="top" onclick='getElementById("h1").innerHTML = mp()'>M+</button></td>
                 <td><button class="top" onclick='getElementById("h1").innerHTML = mr()'>MR</button></td>
-                <td><button class="top" onclick='getElementById("h1").innerHTML = maths("rand")'><small>Rnd</small></button></td>
+                <td><button class="top" onclick='getElementById("h1").innerHTML = maths("rand")'><small>Rnd</small></button></td> 
+				-->
                 <td rowspan="2"><button id="c" class="top" onclick='getElementById("h1").innerHTML = c("")'>C</button></td>
             </tr>
             
@@ -55,10 +66,12 @@
             <tr>
                 <td><button class="top disabled" onclic='getElementById("h1").innerHTML = digit("(")'>(</button></td>
                 <td><button class="top disabled" onclic='getElementById("h1").innerHTML = digit(")")'>)</button></td>
-                <td><button class="top" onclick='getElementById("h1").innerHTML = base("bin")'>bin</button></td>
+                <!--
+				<td><button class="top" onclick='getElementById("h1").innerHTML = base("bin")'>bin</button></td>
                 <td><button class="top" onclick='getElementById("h1").innerHTML = base("oct")'>oct</button></td>
                 <td><button class="top" onclick='getElementById("h1").innerHTML = base("hex")'>hex</button></td>
-            </tr>
+				-->
+			</tr>
             
             <tr>
                 <td><button onclick='getElementById("h1").innerHTML = digit("7")'> 7</button></td>
@@ -74,6 +87,7 @@
                 <td><button onclick='getElementById("h1").innerHTML = digit("6")'>6</button></td>
                 <td><button onclick='getElementById("h1").innerHTML = operators("-")'>-</button></td>
                 <td><button onclick='getElementById("h1").innerHTML = maths("Sqrt")'>√</button></td>
+
             </tr>
             
             <tr>
@@ -88,7 +102,7 @@
                 <td><button onclick='getElementById("h1").innerHTML = dot(".")'>.</button></td>
                 <td><button onclick='getElementById("h1").innerHTML = digit("0")'>0</button></td>
                 <td><button onclick='getElementById("h1").innerHTML = equal()'>=</button></td>
-                <td><button onclick='getElementById("h1").innerHTML = operators("*")'>X</button></td>
+                <td><button onclick='getElementById("h1").innerHTML = operators("*")'>*</button></td>
                 <td><button onclick='getElementById("h1").innerHTML = maths("sqr")'>x<sup>2</sup></button></td>
             </tr>            
         </table>
@@ -96,8 +110,6 @@
         <ul class="f">
             <li id="theme1" class="w" onclick='getElementsByClassName("x").innerHtml = themes(1)'>Theme 1</li>
             <li id="theme2" class="w" onclick='getElementsByClassName("y").innerHtml = themes(2)'>Theme 2</li>
-            <li id="theme3" class="w" onclick='getElementsByClassName("z").innerHtml = themes(3)'>Theme 3</li>
-            <li id="theme4" class="w" onclick='getElementsByClassName("o").innerHtml = themes(4)'>Theme 4</li>
         </ul>
         </div>
     </body>
