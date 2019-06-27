@@ -1,6 +1,5 @@
-/*Save as calc.css*/
 .container {
-    width: 300px;
+    width: 400px;
     padding:0px 10px;
     margin: 0px auto;
 }
@@ -10,7 +9,7 @@ pre{
 }
 h2 {
     color: #89a;
-    width: 300px;
+    width: 400px;
     text-align: center;
 }
 .red {
@@ -28,7 +27,7 @@ button {
     width: 50px; 
     height: 50px; 
     font-size: 22px;
-    background-color: rgba(150, 100, 150, 0.5);
+    background-color: rgba(250, 100, 150, 0.5);
     color: #fee;
     border: 2px #b9b outset;
     border-radius: 5px;
@@ -75,8 +74,8 @@ button:hover{
     margin-bottom: 10px;
 }
 #h1, #display1 { 
-    width: 260px; 
-    height: 25px; 
+    width: 360px; 
+    height: 45px; 
     padding: 2px;
     padding-top: 4px; 
     background-color:powderblue; 
@@ -92,7 +91,7 @@ button:hover{
     font-size: 16px;
 }
 p {
-    width: 270px;
+    width: 370px;
     margin: 10px;
     margin-top: -10px;
     padding: 0px 5px;
@@ -106,7 +105,7 @@ span {
 }
 ul {
     background-color: powderblue;
-    width: 260px;
+    width: 360px;
 }
 li {
     display: inline;
@@ -115,55 +114,48 @@ li {
     font-size: 20px;
 }
 .div {
-    border: 5px #6bc ridge  ;
+    border: 5px #555 ridge  ;
     border-radius: 10px;
     margin: 0px 5px 5px 5px;
     padding-top: 0px;
-    width: 285px;
+    width: 385px;
     box-shadow: -10px 10px 10px silver;
-    background-color: #689;
+    background-color: #000;
     font-size: 11px;
     color: white;
 }
 .w {
     box-shadow: -10px 10px 10px silver;
-    border: 5px #6bc groove;
+    border: 5px #555 groove;
     margin: 0px 5px 5px 5px;
     border-radius: 10px;
     padding-top: 0px;
     font-size: 11px;
     cursor: pointer;
-    width: 285px;
+    width: 385px;
     color: white;
 }
 #theme1{
-    border: 5px #6bc ridge;
-    background-color: #689;
+	background-color: #000;
+    border: 5px #555 ridge; 
 }
 #theme2{
-    background-color: #ba8;
-    border: 5px #dca outset;    
+    border: 5px #6bc ridge;
+    background-color: #689;   
 }
-#theme3{
-    background-color: #8a9;
-    border: 5px #8a9 double;
-}
-#theme4{
-    background-color: #aaa;
-    border: 5px #ddd outset;        
-}
+
 .f {
     box-shadow: -10px 10px 10px silver;
     border: 10px #ddd inset;
     border-radius: 5px;
     margin: 20px 0px;
     padding: 10px;
-    width: 270px;    
+    width: 370px;    
 }
-#theme1:hover,#theme2:hover,#theme3:hover,#theme4:hover{
+#theme1:hover,#theme2:hover{
     box-shadow: -10px 10px 20px gray;
 }
-#theme1:active,#theme2:active,#theme3:active,#theme4:active{
+#theme1:active,#theme2:active{
     font-size: 10px;
     margin-right: 9px;
 }
