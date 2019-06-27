@@ -1,7 +1,4 @@
-//Save as calc.js
-//Feel free to copy modify and do anything you want with this code.Thanks to John Wells and all who gave some helpful suggestions for the improvement of the calculator.
-
-//     THE SCIENTIFIC CALCULATOR
+//     Physics constants 
 
 //Declaring variables
 var decimalPoint = enter = entered = operatorSign = rootNpower_Sign = flo = math = M = firstI = first = second = secondI = answer = theanswer = result = peSign = "";
